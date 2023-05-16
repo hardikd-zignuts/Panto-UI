@@ -9,9 +9,9 @@ import './appbar.scss'
 const AppBar = () => {
     return (
         <>
-            <Navbar className='nav' bg="transparent" expand="md">
-                <Container className='p-0'>
-                    <Navbar.Brand className='navLink navBrand' href="/">Panto</Navbar.Brand>
+            <Navbar className='nav' bg="transparent" expand="lg">
+                <Container className='nav-container'>
+                    <Navbar.Brand className='navBrand' href="/">Panto</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -28,7 +28,7 @@ const AppBar = () => {
                             <Nav.Link href="/" className='navLink'>About Us</Nav.Link>
                             <Nav.Link href="/" className='navLink'>Contact</Nav.Link>
                         </Nav>
-                        <div className='bag'>
+                        <div className='bag d-inline-block ms-4 ms-lg-0'>
                             <HiShoppingBag size={30} />
                             <div className="bag-badge">0</div>
                         </div>

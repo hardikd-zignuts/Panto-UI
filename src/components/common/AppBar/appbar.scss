@@ -2,20 +2,30 @@
 
 nav {
   color: white;
-  padding-top: 40px !important;
+  padding-top: 41px !important;
+  .nav-container {
+    margin: 0px 80px !important;
+    padding: 0px !important;
+  }
   .navBrand {
     font-size: 28px;
     line-height: 33px;
     letter-spacing: 0.01em;
     text-transform: capitalize;
+    color: white;
   }
   .navLink {
     margin-inline: 31px !important;
     color: white;
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 21px;
   }
   #navbarScrollingDropdown {
     color: white !important;
     margin-inline: 31px !important;
+    font-size: 18px;
+    line-height: 21px;
   }
   .bag {
     position: relative;
