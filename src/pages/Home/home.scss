@@ -1,0 +1,14 @@
+@import "./../../assets/scss/App.scss";
+
+.hero {
+  color: #ffffff;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 86.13%,
+      #ffffff 100%
+    ),
+    url("./../../assets/image/hero-bg.svg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
