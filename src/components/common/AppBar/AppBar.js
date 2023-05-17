@@ -9,13 +9,13 @@ import './appbar.scss'
 const AppBar = () => {
     return (
         <>
-            <Navbar className='nav' bg="transparent" expand="lg">
+            <Navbar className='nav justify-content-center' bg="transparent" expand="lg">
                 <Container className='nav-container'>
                     <Navbar.Brand className='navBrand' href="/">Panto</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
-                            className="mx-auto my-2 my-lg-0"
+                            className="mx-auto my-2 my-lg-0 text-center"
                             navbarScroll
                         >
                             <NavDropdown title="Furniture" id="navbarScrollingDropdown">
@@ -28,11 +28,15 @@ const AppBar = () => {
                             <Nav.Link href="/" className='navLink'>About Us</Nav.Link>
                             <Nav.Link href="/" className='navLink'>Contact</Nav.Link>
                         </Nav>
-                        <div className='bag d-inline-block ms-4 ms-lg-0'>
+                        <div className='bag d-none d-lg-inline-block ms-4 ms-lg-0'>
                             <HiShoppingBag size={30} />
                             <div className="bag-badge">0</div>
                         </div>
                     </Navbar.Collapse>
+                    <div className='bag d-inline-block d-lg-none ms-4 ms-lg-0'>
+                        <HiShoppingBag size={30} />
+                        <div className="bag-badge">0</div>
+                    </div>
                 </Container>
             </Navbar>
         </>

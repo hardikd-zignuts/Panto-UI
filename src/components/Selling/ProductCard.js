@@ -1,7 +1,6 @@
 import React from 'react'
 import star from '../../assets/image/icon/star.svg'
 import add from '../../assets/image/icon/add.svg'
-
 const ProductCard = ({ price, category, name, image }) => {
     return (
         <div className='product-card'>
@@ -13,7 +12,7 @@ const ProductCard = ({ price, category, name, image }) => {
             <div className="product-card_rating">
                 <img src={star} alt="rating" />
             </div>
-            <div className="product-card_price">${price}</div>
+            <div className="product-card_price d-flex"><span className="dollar">$</span>{price}</div>
             <div className="product-card_add">
                 <img src={add} alt="add" />
             </div>

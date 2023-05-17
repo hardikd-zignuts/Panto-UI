@@ -3,33 +3,66 @@
 nav {
   color: white;
   padding-top: 41px !important;
+
+  @media (max-width:map-get($breakpoints, lg)) {
+    position: relative;
+  }
+
   .nav-container {
     margin: 0px 80px !important;
     padding: 0px !important;
   }
+
   .navBrand {
     font-size: 28px;
     line-height: 33px;
     letter-spacing: 0.01em;
     text-transform: capitalize;
     color: white;
+
+    @media (max-width:map-get($breakpoints, xl)) {
+      font-size: 24px;
+    }
+
+    @media (max-width:map-get($breakpoints, md)) {
+      font-size: 21px;
+    }
   }
+
   .navLink {
     margin-inline: 31px !important;
     color: white;
     font-family: "Gilroy-Medium";
     font-size: 18px;
     line-height: 21px;
+
+    @media (max-width:map-get($breakpoints, xl)) {
+      font-size: 14px;
+    }
   }
+
   #navbarScrollingDropdown {
+    font-family: 'Gilroy-Medium';
     color: white !important;
     margin-inline: 31px !important;
     font-size: 18px;
     line-height: 21px;
+
+    @media (max-width:map-get($breakpoints, xl)) {
+      font-size: 14px;
+    }
   }
+
   .bag {
     position: relative;
-    margin-right:60px;
+    margin-right: 60px;
+
+    @media (max-width:map-get($breakpoints, lg)) {
+      position: absolute;
+      right: -26px;
+      top: 45px;
+    }
+
     &-badge {
       position: absolute;
       right: -2px;
@@ -42,12 +75,15 @@ nav {
       font-weight: bold;
     }
   }
-  .navbar-toggler{
+
+  .navbar-toggler {
     border: 2px solid white;
   }
-  .navbar-toggler:focus{
-    border:none
+
+  .navbar-toggler:focus {
+    border: none
   }
+
   .navbar-toggler-icon {
     background-image: url('./../../../assets/image/icon/hamburger-menu.svg');
   }

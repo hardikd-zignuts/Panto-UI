@@ -1,3 +1,5 @@
+@import './../../assets/scss/App.scss';
+
 .hero {
   color: #ffffff;
   background: linear-gradient(180deg,
@@ -5,29 +7,70 @@
       #ffffff 100%),
     url("./../../assets/image/hero-bg.svg");
   background-size: cover;
-
-  @media (max-width: "1200px") {
-    background-size: contain;
-  }
-
   background-repeat: no-repeat;
   background-position: top center;
-  height: 1084px;
+  min-height: 1084px;
+
+  @media (max-width:map-get($breakpoints, xl)) {
+    background-size: contain;
+    min-height: 1011px;
+  }
+
+  @media (max-width:map-get($breakpoints, lg)) {
+    min-height: 818px;
+  }
+
+  @media (max-width:map-get($breakpoints, md)) {
+    min-height: 643px;
+  }
 
   .hero-box {
     // margin-top: 43px;
     margin-top: 86px;
     margin-bottom: 14px;
 
+    @media (max-width:map-get($breakpoints, xl)) {
+      margin-top: 65px;
+    }
+
+    @media (max-width:map-get($breakpoints, lg)) {
+      margin-top: 35px;
+    }
+
     .hero-box_title {
       line-height: 130%;
       letter-spacing: -0.01em;
       text-transform: capitalize;
+      width: 861px;
+
+      @media (max-width:map-get($breakpoints, xl)) {
+        width: 661px;
+        font-size: 45px !important;
+        line-height: 118%;
+      }
+
+      @media (max-width:map-get($breakpoints, lg)) {
+        width: 594px;
+        font-size: 35px !important;
+      }
     }
 
     .hero-box_text {
       line-height: 38px;
       opacity: 0.8;
+      width: 606px;
+
+      @media (max-width:map-get($breakpoints, xl)) {
+        font-size: 15px !important;
+        width: 406px;
+        line-height: 30px;
+      }
+
+      @media (max-width:map-get($breakpoints, lg)) {
+        font-size: 13px !important;
+        width: 345px;
+        line-height: 24px;
+      }
     }
 
     .hero-box_input {
@@ -47,11 +90,19 @@
       order: 0;
       flex-grow: 0;
 
+      @media (max-width:map-get($breakpoints, xl)) {
+        margin-top: 32px;
+      }
+
       input {
         border: none;
         background: transparent;
         margin: 15.5px 0px 15.5px 20px;
         color: white;
+
+        @media (max-width:map-get($breakpoints, xl)) {
+          margin: 9.5px 0px 9.5px 20px;
+        }
       }
 
       input:focus {
@@ -68,6 +119,10 @@
         right: 3px;
         height: 46px;
         top: 4px;
+
+        @media (max-width:map-get($breakpoints, xl)) {
+          height: 34px;
+        }
       }
     }
   }
