@@ -29,6 +29,7 @@ nav {
   }
   .bag {
     position: relative;
+    margin-right:60px;
     &-badge {
       position: absolute;
       right: -2px;
@@ -40,5 +41,14 @@ nav {
       color: white;
       font-weight: bold;
     }
+  }
+  .navbar-toggler{
+    border: 2px solid white;
+  }
+  .navbar-toggler:focus{
+    border:none
+  }
+  .navbar-toggler-icon {
+    background-image: url('./../../../assets/image/icon/hamburger-menu.svg');
   }
 }

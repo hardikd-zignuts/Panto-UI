@@ -18,6 +18,6 @@ body {
 
 .container {
   @media (min-width: map-get($breakpoints, xxl)) {
-    max-width: 1200px !important;
+    max-width: 1280px !important;
   }
 }

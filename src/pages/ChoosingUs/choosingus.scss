@@ -1,0 +1,38 @@
+@import './../../assets/scss/App.scss';
+
+
+.choose {
+    margin-block: 120px;
+
+    .choose-title {
+        line-height: 49px;
+    }
+
+    .choose-text {
+        font-family: 'Gilroy-Bold' !important;
+        line-height: 28px;
+        color: $title-text;
+        opacity: 0.9;
+        margin: 10px 0px;
+    }
+
+    .choose-sub-text {
+        font-family: 'Gilroy-Regular';
+        font-size: 16px;
+        line-height: 185%;
+        color: $title-text;
+        margin: 10px 0px;
+        opacity: 0.8;
+    }
+
+    .choose-footer {
+        font-family: 'Gilroy-Medium';
+        font-size: 14px;
+        line-height: 185%;
+        color: $bag-bg;
+        @include flex;
+        justify-content: space-between;
+        width: 121px;
+        margin: 4px 0px;
+    }
+}
