@@ -8,9 +8,34 @@ nav {
     position: relative;
   }
 
+  @media (max-width:map-get($breakpoints, md)) {
+    padding-top: 22px !important;
+  }
+
+  @media (max-width:map-get($breakpoints, sm)) {
+    padding-top: 12px !important;
+  }
+
+  .dropdown {
+    @media (max-width:map-get($breakpoints, sm)) {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      @media (max-width:map-get($breakpoints, sm)) {
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+
   .nav-container {
     margin: 0px 80px !important;
     padding: 0px !important;
+
+    @media (max-width:map-get($breakpoints, xs)) {
+      margin: 0px 37px !important;
+    }
   }
 
   .navBrand {
@@ -27,6 +52,8 @@ nav {
     @media (max-width:map-get($breakpoints, md)) {
       font-size: 21px;
     }
+
+
   }
 
   .navLink {
@@ -38,6 +65,12 @@ nav {
 
     @media (max-width:map-get($breakpoints, xl)) {
       font-size: 14px;
+      line-height: 18px;
+    }
+
+    @media (max-width:map-get($breakpoints, xs)) {
+      font-size: 11px;
+      line-height: 12px;
     }
   }
 
@@ -50,6 +83,12 @@ nav {
 
     @media (max-width:map-get($breakpoints, xl)) {
       font-size: 14px;
+      line-height: 18px;
+    }
+
+    @media (max-width:map-get($breakpoints, xs)) {
+      font-size: 11px;
+      line-height: 12px;
     }
   }
 
@@ -61,6 +100,18 @@ nav {
       position: absolute;
       right: -26px;
       top: 45px;
+    }
+
+    @media (max-width:map-get($breakpoints, md)) {
+      top: 28px;
+    }
+
+    @media (max-width:map-get($breakpoints, sm)) {
+      top: 17px;
+    }
+
+    @media (max-width:map-get($breakpoints, xs)) {
+      right: -49px;
     }
 
     &-badge {
@@ -77,11 +128,12 @@ nav {
   }
 
   .navbar-toggler {
-    border: 2px solid white;
+    border: none !important;
+    outline: none !important;
   }
 
   .navbar-toggler:focus {
-    border: none
+    box-shadow: none !important;
   }
 
   .navbar-toggler-icon {

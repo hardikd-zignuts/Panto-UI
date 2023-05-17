@@ -4,43 +4,12 @@ import { Category, SellingProductData } from '../../constant/CardData'
 
 import './selling.scss'
 import Slider from 'react-slick'
+import settings from '../../constant/setting'
 
 
 const SellingProduct = () => {
     const [isActive, setIsActive] = useState(0)
-    const settings = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        initialSlide: 0,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                },
-            },
-            {
-                breakpoint: 999,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2,
-                },
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1,
-                },
-            },
-        ],
-    };
+
 
     return (
         <>

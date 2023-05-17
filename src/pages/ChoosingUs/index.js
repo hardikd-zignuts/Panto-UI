@@ -17,9 +17,9 @@ const ChoosingUs = () => {
                                 ChoiceData.map(ele => {
                                     return (
                                         <div key={ele.id} className="col-12 col-lg-4 text-lg-start text-center">
-                                                <div className="choose-text primary-text">{ele.title}</div>
-                                                <div className="choose-sub-text">{ele.description}</div>
-                                                <div className='choose-footer'>More Info <img src={RightArrow} alt="RightArrow" /></div>
+                                            <div className="choose-text primary-text">{ele.title}</div>
+                                            <div className="choose-sub-text">{ele.description}</div>
+                                            <div className='choose-footer'>More Info <img src={RightArrow} alt="RightArrow" /></div>
                                         </div>
                                     )
                                 })

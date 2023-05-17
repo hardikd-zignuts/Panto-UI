@@ -11,9 +11,14 @@
         padding-top: 50px;
         padding-bottom: 32px;
 
-        &-title {
+        .selling-title {
             line-height: 49px;
             margin-bottom: 32px;
+
+            @media (max-width:map-get($breakpoints, md)) {
+                font-size: 33px;
+                line-height: 35px;
+            }
         }
 
         .category {
@@ -27,6 +32,11 @@
             width: 348px;
             padding: 6px;
 
+            @media (max-width:map-get($breakpoints, md)) {
+                width: 295px;
+                padding: 5px;
+            }
+
             &-name {
                 padding: 7px 19.5px;
                 color: $title-text;
@@ -37,6 +47,12 @@
                 flex: none;
                 order: 0;
                 flex-grow: 0;
+
+                @media (max-width:map-get($breakpoints, md)) {
+                    font-size: 13px;
+                    line-height: 147%;
+
+                }
             }
 
             .active-cat {
@@ -71,7 +87,7 @@
             margin-inline: 24px;
 
             @media (max-width:map-get($breakpoints, md)) {
-                width: 100%;
+                width: 95%;
             }
 
             &_image {
@@ -86,8 +102,24 @@
                     top: -67px;
                     left: 22px;
 
+                    @media (max-width:'999px') {
+                        left: 94px;
+                    }
+
+                    @media (max-width:map-get($breakpoints, lg)) {
+                        left: 49px;
+                    }
+
                     @media (max-width:map-get($breakpoints, md)) {
                         left: 146px;
+                    }
+
+                    @media (max-width:'493px') {
+                        left: 113px;
+                    }
+
+                    @media (max-width:'413px') {
+                        left: 42px;
                     }
                 }
             }

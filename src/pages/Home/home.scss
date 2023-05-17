@@ -13,15 +13,26 @@
 
   @media (max-width:map-get($breakpoints, xl)) {
     background-size: contain;
+    // min-height: 868px;
     min-height: 1011px;
   }
 
   @media (max-width:map-get($breakpoints, lg)) {
+    // min-height:656px;
     min-height: 818px;
   }
 
   @media (max-width:map-get($breakpoints, md)) {
     min-height: 643px;
+  }
+
+  @media (max-width:map-get($breakpoints, sm)) {
+    min-height: 486px;
+    background-size: cover;
+  }
+
+  @media (max-width:map-get($breakpoints, xs)) {
+    min-height: 426px;
   }
 
   .hero-box {
@@ -35,6 +46,10 @@
 
     @media (max-width:map-get($breakpoints, lg)) {
       margin-top: 35px;
+    }
+
+    @media (max-width:map-get($breakpoints, sm)) {
+      margin-top: 12px;
     }
 
     .hero-box_title {
@@ -53,6 +68,16 @@
         width: 594px;
         font-size: 35px !important;
       }
+
+      @media (max-width:map-get($breakpoints, lg)) {
+        width: 384px;
+        font-size: 29px !important;
+      }
+
+      @media (max-width:map-get($breakpoints, xs)) {
+        width: 306px;
+        font-size: 23px !important;
+      }
     }
 
     .hero-box_text {
@@ -70,6 +95,16 @@
         font-size: 13px !important;
         width: 345px;
         line-height: 24px;
+      }
+
+      @media (max-width:map-get($breakpoints, sm)) {
+        font-size: 11px !important;
+        width: 259px;
+        line-height: 15px;
+      }
+
+      @media (max-width:map-get($breakpoints, xs)) {
+        width: 211px;
       }
     }
 
@@ -94,6 +129,18 @@
         margin-top: 32px;
       }
 
+      @media (max-width:map-get($breakpoints, lg)) {
+        width: 269px;
+      }
+
+      @media (max-width:map-get($breakpoints, sm)) {
+        width: 218px;
+      }
+
+      @media (max-width:map-get($breakpoints, xs)) {
+        width: 171px;
+      }
+
       input {
         border: none;
         background: transparent;
@@ -102,6 +149,21 @@
 
         @media (max-width:map-get($breakpoints, xl)) {
           margin: 9.5px 0px 9.5px 20px;
+        }
+
+        @media (max-width:map-get($breakpoints, lg)) {
+          margin: 5.5px 0px 5.5px 20px;
+          font-size: 13px;
+        }
+
+        @media (max-width:map-get($breakpoints, sm)) {
+          margin: 3.5px 0px 3.5px 20px;
+          font-size: 12px;
+        }
+
+        @media (max-width:map-get($breakpoints, xs)) {
+          margin: 1.5px 0px 1.5px 20px;
+          font-size: 10px;
         }
       }
 
@@ -112,6 +174,18 @@
       input::placeholder {
         color: #FFFFFF;
         opacity: 0.8;
+
+        @media (max-width:map-get($breakpoints, lg)) {
+          font-size: 13px;
+        }
+
+        @media (max-width:map-get($breakpoints, sm)) {
+          font-size: 12px;
+        }
+
+        @media (max-width:map-get($breakpoints, xs)) {
+          font-size: 10px;
+        }
       }
 
       img {
@@ -122,6 +196,19 @@
 
         @media (max-width:map-get($breakpoints, xl)) {
           height: 34px;
+        }
+
+        @media (max-width:map-get($breakpoints, lg)) {
+          height: 28px;
+        }
+
+        @media (max-width:map-get($breakpoints, sm)) {
+          height: 25px;
+          top: 3px;
+        }
+
+        @media (max-width:map-get($breakpoints, xs)) {
+          height: 21px;
         }
       }
     }
