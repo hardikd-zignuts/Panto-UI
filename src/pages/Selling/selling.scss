@@ -174,7 +174,7 @@
             &_add {
                 @include flex;
                 align-items: flex-start;
-                padding: 12.1858px;
+                padding: 14.1858px;
                 gap: 15.23px;
                 background: $product-title;
                 border-radius: 31px;
@@ -185,11 +185,22 @@
                 bottom: 27.42px;
             }
         }
+
+        .view-all {
+            font-family: 'Gilroy-Medium';
+            font-size: 18px;
+            line-height: 185%;
+            color: $bag-bg;
+            width: 121px;
+            display: flex;
+            justify-content: space-between;
+            padding-block: 50px;
+        }
     }
 
     .slick-slider {
         background-color: $selling-bg;
-        padding-bottom: 120px;
+        padding-bottom: 10px;
 
         .slick-prev {
             background-image: url("../../assets/image/icon/prev-arrow.svg") !important;

@@ -5,12 +5,10 @@ import { Category, SellingProductData } from '../../constant/CardData'
 import './selling.scss'
 import Slider from 'react-slick'
 import settings from '../../constant/setting'
-
+import Arrow from './../../assets/image/icon/right-arrow.svg'
 
 const SellingProduct = () => {
     const [isActive, setIsActive] = useState(0)
-
-
     return (
         <>
             <div className='selling'>
@@ -29,7 +27,6 @@ const SellingProduct = () => {
                     </div>
                 </div>
                 <div className="container">
-
                     <div className="product-gallery">
                         <Slider {...settings}>
                             {
@@ -40,7 +37,11 @@ const SellingProduct = () => {
                                 })
                             }
                         </Slider>
+                        <div className="view-all mx-auto">
+                            View All <img src={Arrow} alt="view all" />
+                        </div>
                     </div>
+
                 </div>
             </div>
         </>
