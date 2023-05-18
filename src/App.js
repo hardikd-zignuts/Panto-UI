@@ -5,6 +5,8 @@ import SellingProduct from './pages/Selling';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Experience from './pages/Experience';
+import Footer from './components/common/Footer';
+import Testimonials from './pages/Testimonials';
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
       <ChoosingUs />
       <SellingProduct />
       <Experience />
+      <Testimonials />
+      <Footer />
     </>
   );
 }
