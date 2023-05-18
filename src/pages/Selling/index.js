@@ -4,7 +4,7 @@ import { Category, SellingProductData } from '../../constant/CardData'
 
 import './selling.scss'
 import Slider from 'react-slick'
-import settings from '../../constant/setting'
+import { ProductSettings } from '../../constant/setting'
 import Arrow from './../../assets/image/icon/right-arrow.svg'
 
 const SellingProduct = () => {
@@ -28,7 +28,7 @@ const SellingProduct = () => {
                 </div>
                 <div className="container">
                     <div className="product-gallery">
-                        <Slider {...settings}>
+                        <Slider {...ProductSettings}>
                             {
                                 SellingProductData.map(ele => {
                                     return (
@@ -41,7 +41,6 @@ const SellingProduct = () => {
                             View All <img src={Arrow} alt="view all" />
                         </div>
                     </div>
-
                 </div>
             </div>
         </>

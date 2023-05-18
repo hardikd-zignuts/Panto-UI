@@ -13,12 +13,10 @@
 
   @media (max-width:map-get($breakpoints, xl)) {
     background-size: contain;
-    // min-height: 868px;
     min-height: 1011px;
   }
 
   @media (max-width:map-get($breakpoints, lg)) {
-    // min-height:656px;
     min-height: 818px;
   }
 

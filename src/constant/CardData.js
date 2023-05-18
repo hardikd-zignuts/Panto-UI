@@ -5,6 +5,9 @@ import Product4 from './../assets/image/product4.png'
 import client1 from "../assets/image/icon/client1.png";
 import client2 from "../assets/image/icon/client2.png";
 import client3 from "../assets/image/icon/client3.png";
+import client1bg from "../assets/image/icon/client1-bg.png";
+import client2bg from "../assets/image/icon/client2-bg.png";
+import client3bg from "../assets/image/icon/client3-bg.png";
 
 const ChoiceData = [
     {
@@ -62,24 +65,25 @@ const ReviewData = [
         image: client1,
         title: "Bang Upin",
         name: "Pedagang Asongan",
-        review:
-            "Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal",
+        review: "Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal",
+        bg: client1bg
+
     },
     {
         id: "r2",
         image: client2,
         title: "Ibuk Sukijan",
         name: "Ibu Rumah Tangga",
-        review:
-            "“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“",
+        review: "Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah",
+        bg: client2bg
     },
     {
         id: "r3",
         image: client3,
         title: "Mpok Ina",
         name: "Karyawan Swasta",
-        review:
-            "“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“",
+        review: "Sangat terjangkau untuk kantong saya yang tidak terlalu banyak",
+        bg: client3bg
     },
 ];
 
