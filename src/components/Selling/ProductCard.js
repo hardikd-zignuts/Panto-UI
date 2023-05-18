@@ -13,9 +13,9 @@ const ProductCard = ({ price, category, name, image }) => {
                 <img src={star} alt="rating" />
             </div>
             <div className="product-card_price d-flex"><span className="dollar">$</span>{price}</div>
-            <div className="product-card_add">
+            <button className="product-card_add">
                 <img src={add} alt="add" />
-            </div>
+            </button>
         </div>
     )
 }
