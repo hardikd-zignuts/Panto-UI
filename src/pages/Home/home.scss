@@ -12,16 +12,16 @@
   min-height: 1084px;
 
   @media (max-width:map-get($breakpoints, xl)) {
-    background-size: contain;
-    min-height: 1011px;
+    min-height: 830px;
   }
 
   @media (max-width:map-get($breakpoints, lg)) {
-    min-height: 818px;
+    min-height: 670px;
   }
 
   @media (max-width:map-get($breakpoints, md)) {
-    min-height: 643px;
+    min-height: 580px;
+    background-size: contain;
   }
 
   @media (max-width:map-get($breakpoints, sm)) {
@@ -46,6 +46,10 @@
       margin-top: 35px;
     }
 
+    @media (max-width:'674px') {
+      margin-top: 11px;
+    }
+
     @media (max-width:map-get($breakpoints, sm)) {
       margin-top: 12px;
     }
@@ -63,12 +67,12 @@
       }
 
       @media (max-width:map-get($breakpoints, lg)) {
-        width: 594px;
+        width: 527px;
         font-size: 35px !important;
       }
 
-      @media (max-width:map-get($breakpoints, lg)) {
-        width: 384px;
+      @media (max-width:map-get($breakpoints, sm)) {
+        width: 360px;
         font-size: 29px !important;
       }
 
@@ -91,7 +95,7 @@
 
       @media (max-width:map-get($breakpoints, lg)) {
         font-size: 13px !important;
-        width: 345px;
+        width: 299px;
         line-height: 24px;
       }
 
@@ -124,7 +128,7 @@
       flex-grow: 0;
 
       @media (max-width:map-get($breakpoints, xl)) {
-        margin-top: 32px;
+        margin-top: 16px;
       }
 
       @media (max-width:map-get($breakpoints, lg)) {

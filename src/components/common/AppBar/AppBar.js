@@ -16,7 +16,6 @@ const AppBar = () => {
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
                             className="mx-auto my-2 my-lg-0 text-center"
-                            navbarScroll
                         >
                             <NavDropdown title="Furniture" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="/">Chair</NavDropdown.Item>
