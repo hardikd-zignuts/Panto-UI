@@ -67,8 +67,6 @@
                 flex-grow: 0;
             }
         }
-
-
     }
 
     .product-gallery {
@@ -76,7 +74,6 @@
         .product-card {
             background: #fff;
             position: relative;
-            // width: 268.09px;
             height: 441.73px;
             margin-top: 130px;
             border-radius: 20px;
@@ -94,10 +91,13 @@
                 margin-bottom: 13.71px;
                 border-radius: 20px;
 
+
                 img {
                     position: absolute;
                     top: -67px;
                     left: 22px;
+                    transition: 0.5s all ease-in-out;
+
 
                     @media (max-width:'999px') {
                         left: 94px;
@@ -118,6 +118,10 @@
                     @media (max-width:'413px') {
                         left: 42px;
                     }
+                }
+
+                img:hover {
+                    transform: scale(1.1);
                 }
             }
 

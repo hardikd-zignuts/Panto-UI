@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import ProductCard from '../../components/Selling/ProductCard'
 import { Category, SellingProductData } from '../../constant/CardData'
-
-import './selling.scss'
 import Slider from 'react-slick'
 import { ProductSettings } from '../../constant/setting'
 import Arrow from './../../assets/image/icon/right-arrow.svg'
+import './selling.scss'
 
 const SellingProduct = () => {
     const [isActive, setIsActive] = useState(0)
