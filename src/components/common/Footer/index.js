@@ -54,12 +54,19 @@ const Footer = () => {
                             </Col>
                         </Row>
                     </div>
-                    <div className="footer-bottom d-flex justify-content-between flex-wrap align-items-center">
+                    <div className="footer-bottom d-sm-flex justify-content-between flex-wrap align-items-center d-none">
                         <div className='copyright'>
                             Copyright © 2021
                         </div>
                         <div className='policy d-flex justify-content-between'>
                             <div>Terms & Conditions</div>
+                            <div>Privacy Policy</div>
+                        </div>
+                    </div>
+                    <div className="footer-bottom d-flex justify-content-between flex-wrap align-items-center d-sm-none">
+                        <div className='policy d-flex justify-content-between align-items-center'>
+                            <div>Terms & Conditions</div>
+                            <div className='copyright'>Copyright © 2021</div>
                             <div>Privacy Policy</div>
                         </div>
                     </div>

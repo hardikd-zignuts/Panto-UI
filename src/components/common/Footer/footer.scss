@@ -4,19 +4,19 @@
     background: $selling-bg;
     padding-inline: 108px;
 
-    @media (max-width:map-get($breakpoints, xl)) {
+    @include xl {
         padding-inline: 34px;
     }
 
     &-header {
         padding-block: 118px;
 
-        @media (max-width:map-get($breakpoints, xl)) {
+        @include xl {
             padding-block: 63px;
         }
 
         &-box1 {
-            @media (max-width:map-get($breakpoints, xl)) {
+            @include xl {
                 @include flex;
                 justify-content: center;
                 flex-direction: column;
@@ -32,7 +32,7 @@
                 color: $title-text;
                 margin-bottom: 19px;
 
-                @media (max-width:map-get($breakpoints, xl)) {
+                @include xl {
                     margin-bottom: 1px;
                 }
             }
@@ -67,10 +67,14 @@
                 line-height: 160%;
                 color: $title-text;
                 opacity: 0.8;
-                width: 133px;
+                width: 200px;
             }
 
             .footer-link {
+                @include sm {
+                    text-align: center;
+                }
+
                 :first-child {
                     font-family: 'DM Sans';
                     font-style: normal;
@@ -99,7 +103,7 @@
     &-bottom {
         padding-block: 58px;
 
-        @media (max-width:map-get($breakpoints, sm)) {
+        @include sm {
             flex-direction: column;
             gap: 16px;
         }
@@ -115,7 +119,7 @@
             mix-blend-mode: normal;
             opacity: 0.5;
 
-            @media (max-width:map-get($breakpoints, sm)) {
+            @include sm {
                 font-size: 11px;
             }
         }
@@ -128,8 +132,8 @@
             color: $title-text;
             opacity: 0.8;
 
-            @media (max-width:map-get($breakpoints, sm)) {
-                font-size: 9px;
+            @include sm {
+                font-size: 11px;
                 width: 100%;
             }
         }
