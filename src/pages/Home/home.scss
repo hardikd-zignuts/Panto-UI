@@ -5,13 +5,13 @@
   background: linear-gradient(180deg,
       rgba(255, 255, 255, 0) 86.13%,
       #ffffff 100%),
-    url("./../../assets/image/hero-bg.svg");
+    url("./../../assets/image/hero-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   min-height: 1084px;
 
-  @include xl{
+  @include xl {
     min-height: 830px;
   }
 
@@ -38,7 +38,7 @@
     margin-top: 86px;
     margin-bottom: 14px;
 
-    @include xl{
+    @include xl {
       margin-top: 65px;
     }
 
@@ -60,7 +60,7 @@
       text-transform: capitalize;
       width: 861px;
 
-      @include xl{
+      @include xl {
         width: 661px;
         font-size: 45px !important;
         line-height: 118%;
@@ -87,7 +87,7 @@
       opacity: 0.8;
       width: 606px;
 
-      @include xl{
+      @include xl {
         font-size: 15px !important;
         width: 406px;
         line-height: 30px;
@@ -127,7 +127,7 @@
       order: 0;
       flex-grow: 0;
 
-      @include xl{
+      @include xl {
         margin-top: 16px;
       }
 
@@ -149,7 +149,7 @@
         margin: 15.5px 0px 15.5px 20px;
         color: white;
 
-        @include xl{
+        @include xl {
           margin: 9.5px 0px 9.5px 20px;
         }
 
@@ -196,7 +196,7 @@
         height: 46px;
         top: 4px;
 
-        @include xl{
+        @include xl {
           height: 34px;
         }
 

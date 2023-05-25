@@ -56,7 +56,14 @@ const SellingProductData = [
         name: 'Nyantuy Chair',
         price: 921,
         image: Product4
-    }
+    },
+    {
+        id: 'p5',
+        category: 'Chair',
+        name: 'Sakarias Armchair',
+        price: 392,
+        image: Product1
+    },
 ]
 
 const ReviewData = [

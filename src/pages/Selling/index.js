@@ -19,7 +19,7 @@ const SellingProduct = () => {
                         {
                             Category.map((cat, index) => {
                                 return (
-                                    <button onClick={() => setIsActive(index)} key={cat} className={`category-name border-0 ${isActive === index && 'active-cat'}`}>{cat}</button>
+                                    <button onClick={() => setIsActive(index)} key={cat} ẓclassName={`category-name border-0 ${isActive === index && 'active-cat'}`}>{cat}</button>
                                 )
                             })
                         }
